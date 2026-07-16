@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Fin</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:Georgia, serif;
+
+    background:
+    linear-gradient(
+        180deg,
+        #0b1525 0%,
+        #15324d 45%,
+        #234e73 100%
+    );
+
+    color:white;
+    padding:40px;
+}
+
+.container{
+    max-width:1200px;
+    text-align:center;
+}
+
+.top-text{
+    font-size:2rem;
+    font-weight:300;
+    margin-bottom:60px;
+    color:#dcefff;
+}
+
+.gallery{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-bottom:70px;
+}
+
+.gallery img{
+    width:280px;
+    height:360px;
+    object-fit:cover;
+
+    border-radius:25px;
+
+    border:1px solid rgba(255,255,255,0.2);
+
+    box-shadow:
+    0 0 30px rgba(173,216,230,0.15);
+
+    transition:0.4s;
+}
+
+.gallery img:hover{
+    transform:translateY(-8px);
+}
+
+.bottom-text{
+    font-size:1.5rem;
+    color:#eaf6ff;
+    line-height:1.8;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="top-text">
+        Tu es devenu mon chez-moi.
+    </div>
+
+    <div class="gallery">
+        <img src="pie.png" alt="">
+        <img src="flowers.jfif" alt="">
+        <img src="bracelet.jpg" alt="">
+    </div>
+
+    <div class="bottom-text">
+        Certaines personnes deviennent un endroit<br>
+        où le cœur se sent chez lui.
+    </div>
+
+</div>
+
+</body>
+</html>
