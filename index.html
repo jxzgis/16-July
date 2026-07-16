@@ -104,6 +104,19 @@ button:hover{
 
 <body>
 
+<div id="lock">
+    <h2>Enter the code ❄️</h2>
+
+    <input type="password" id="password" placeholder="Code">
+
+    <button onclick="unlock()">Unlock</button>
+
+    <p id="error"></p>
+</div>
+
+
+<div id="letter" style="display:none;">
+
 <div class="snowflake" style="left:10%; top:-50px; animation-duration:12s;">❄</div>
 <div class="snowflake" style="left:25%; top:-150px; animation-duration:18s;">❅</div>
 <div class="snowflake" style="left:40%; top:-80px; animation-duration:15s;">❄</div>
@@ -125,6 +138,31 @@ button:hover{
     </a>
 
 </div>
+
+
+<script>
+
+function unlock(){
+
+    let code = document.getElementById("password").value;
+
+    if(code === "160226"){
+
+        document.getElementById("lock").style.display="none";
+
+        document.getElementById("letter").style.display="block";
+
+    }
+
+    else{
+
+        document.getElementById("error").innerHTML="Incorrect code ❄️";
+
+    }
+
+}
+
+</script>
 
 </body>
 </html>
